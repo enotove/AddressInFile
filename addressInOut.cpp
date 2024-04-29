@@ -22,7 +22,7 @@ public:
     }
     std::string PrintAddress()
     {
-        return city + ", " + street + ", " + std::to_string(numberAppartment) + ", " + std::to_string(numberHous);
+        return city + ", " + street + ", " + std::to_string(numberHous) + ", " + std::to_string(numberAppartment);
     }
 
 };
