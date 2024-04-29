@@ -47,7 +47,6 @@ int main()
     Address* address = static_cast<Address*>(calloc(counter, sizeof(Address)));
     for (int i = 0; i < counter; i++)
     {
-        std::cout << "Цикл: " << i << std::endl;
         inFile >> city;
         inFile >> street;
         inFile >> numberHouse;
@@ -62,7 +61,7 @@ int main()
         std::cout << "Not found OUTfile in this address!" << std::endl;
         return 0;
     }
-    for (int i = 0; i < counter; i++)
+    for (int i = counter-1; 0 <= i; i--)
     {
         outFile << address[i].PrintAddress() << std::endl;
     }
